@@ -8,4 +8,4 @@ it will ask you to remove weight then add a known weght.
 it will then spit out a number you take this number divide it by the known weight and that will be your calibration factor.
 so calibration factor = (reading) /( known weight)
 
-we plug our calibration factoor into the CornerScales sketch and repeat this process for each scale.
+we plug our calibration factor into the CornerScales sketch on line 33,37,41, and 45 for the "scale*calibration" variable for each scale.
