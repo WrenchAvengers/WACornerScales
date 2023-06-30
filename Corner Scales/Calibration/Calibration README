@@ -1,6 +1,7 @@
 to calibrate the scales run the ScaleCalibration Sketch.
 change the pin numbers on line 16 and 17 to match your set up.
-you will want to run this calibration seperately for each scale. your calibration number should be put into the CornerScales Sketch starting with line 33 where we define the scale1Calibration variable.
+you will want to run this calibration seperately for each scale. your calibration number should be put into the CornerScales Sketch
+starting with line 33 where we define the scale1Calibration variable.
 
 to find the calibration number you will run the calibration sketch.
 open the Serial Monitor and use 57600 baud.
