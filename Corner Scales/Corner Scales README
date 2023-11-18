@@ -1,1 +1,19 @@
+to use the Corner Scales Arduino Sketch there are some things you need to address.
+
+first off you will want to set the units you will be using. if using freedom units then you can leave them if you want to use KG you probably want to search for "Lbs" and change them to KG for the displays. may need to mess with the centering after that as well
+
+Next you will want to wire in your Keys ensure they are set to use the right pin on your arduino.
+Then you will want to be sure you set up your LCDs to have the right pins on the back set. i have that noted in the Sketch. (Example 0x24, 16, 2 to correspond to A0 and A1 closed on back of LCD.)
+
+after setting up your scales be sure to define the correct pins on your arduino for TX and RX. do this for each scale.
+
+then you will need to calibrate the scales. i go over that process in the calibration folder.
+
+To use the buttons:
+button 1 just does a Tare on all the scales. meaning it zeroes them out.
+when you press it you have to hold it for around 3 to 5 seconds for it to perform the tare.
+
+Button 2 shows you cross weight percentage. again you need to hold the button for a little bit for it to work.
+Button 4 exits the cross weight precentage screen.
+Button 3 doesnt do anything so use it to add whatever function youd like.
 
