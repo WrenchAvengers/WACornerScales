@@ -9,6 +9,7 @@ to find the calibration number you will run the calibration sketch.
 open the Serial Monitor and use 57600 baud.
 it will ask you to remove weight then add a known weght. (this known weight can be in Lbs, KG, what ever measurement system you are using. it will only change the camibration factor. im using using a 10lbs weight that measured 9.8lbs on my bathroom scale.)
 it will then spit out a number.
+i like to set the scale up so that its spitting out a positive number. it will still work if its a negetive number i just like the positive better.
 
 example:
 Place a known weight on the scale...Result: 50844
