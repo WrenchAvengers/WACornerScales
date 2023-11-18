@@ -17,3 +17,6 @@ Button 2 shows you cross weight percentage. again you need to hold the button fo
 Button 4 exits the cross weight precentage screen.
 Button 3 doesnt do anything so use it to add whatever function youd like.
 
+
+For the Most part i wired up the system like the Corner_weights_wiring.png shows (i got this from tfunder) i may have made minor changes that are likely noted in my youtuve video or in the Sketch itself.
+if nothing else that image should get you on the right track though im pretty sure the wireing out of the HX711 to the Load Cells is different than mine. i suspect that will be different based on the HX711 you use as well as what load cells are used. so just match that to what you have.
