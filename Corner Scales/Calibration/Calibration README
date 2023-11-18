@@ -1,12 +1,33 @@
 to calibrate the scales run the ScaleCalibration Sketch.
 change the pin numbers on line 16 and 17 to match your set up.
-you will want to run this calibration seperately for each scale. your calibration number should be put into the CornerScales Sketch
+you will want to run this calibration seperately for each scale. 
+
+your calibration number should be put into the CornerScales Sketch
 starting with line 33 where we define the scale1Calibration variable.
 
 to find the calibration number you will run the calibration sketch.
 open the Serial Monitor and use 57600 baud.
-it will ask you to remove weight then add a known weght.
-it will then spit out a number you take this number divide it by the known weight and that will be your calibration factor.
-so calibration factor = (reading) /( known weight)
+it will ask you to remove weight then add a known weght. (this known weight can be in Lbs, KG, what ever measurement system you are using. it will only change the camibration factor. im using using a 10lbs weight that measured 9.8lbs on my bathroom scale.)
+it will then spit out a number.
+
+example:
+Place a known weight on the scale...Result: 50844
+Tare... remove any weights from the scale.
+Tare done...
+Place a known weight on the scale...Result: 50903
+Tare... remove any weights from the scale.
+Tare done...
+
+it will repeat this process as long as you are running the sketch.
+i like to do this process 3 times and take down the 3 numbers and use the average of those 3 for the next part.
+
+you take this number divide it by the known weight and that will be your calibration factor.
+so calibration factor = (reading) /(known weight)
+
+i take the whole number and the next 2 decimal points. (ex. 5191.73)
 
 we plug our calibration factor into the CornerScales sketch on line 33,37,41, and 45 for the "scale*calibration" variable for each scale.
+Example:
+#define scale2Calibration 5191.73 //Front Left scale
+
+Complete that process for each of your scales. yes its a little cumbersome but once finished you shouldnt need to redo this calibration again unless you change the weight of the scale itself drastically.
